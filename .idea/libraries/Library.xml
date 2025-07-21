@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Library/commons-fileupload-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library/sqljdbc4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library/commons-io-2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

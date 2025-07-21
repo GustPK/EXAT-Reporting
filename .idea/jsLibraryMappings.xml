@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="EXAT_Reporting/build/web/WEB-INF/classes/$RECYCLE.BIN/S-1-5-21-3248077788-2360062425-2614905320-1001/$RFI2LQA/build/web/WEB-INF/classes/(EXAT)e-Welfare(12-2023)/(EXAT)e-Welfare(12-2023)/BackEnd/eWelfare_api/app/node_modules" />
+  </component>
+</project>
