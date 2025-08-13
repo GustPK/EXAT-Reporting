@@ -26,6 +26,7 @@ public class ct_sysMTReportjob {
         Oj_sb.append(", ISNULL(REPORTJOB_TODATE, '') AS REPORTJOB_TODATE"); 
         Oj_sb.append(", ISNULL(USER_ID, '') AS USER_ID");
         Oj_sb.append(", ISNULL(JOB_CODE, '') AS JOB_CODE");
+        Oj_sb.append(", ISNULL(WORKTYPE_ID, '') AS WORKTYPE_ID");
         Oj_sb.append(", ISNULL(MODIFIED_BY, CREATED_BY) AS MODIFIED_BY"); 
         Oj_sb.append(", ISNULL(MODIFIED_DATE, CREATED_DATE) AS MODIFIED_DATE"); 
         Oj_sb.append(" FROM SYS_MT_REPORTJOB");
@@ -61,6 +62,7 @@ public class ct_sysMTReportjob {
                 model.setJob_code(Oj_rs.getString("JOB_CODE"));
                 model.setCreated_by(Oj_rs.getString("MODIFIED_BY"));
                 model.setCreated_date(timestamp);
+                model.setWorktype_id(Oj_rs.getString("WORKTYPE_ID"));
 
                 Ojarr_model.add(model);
             }

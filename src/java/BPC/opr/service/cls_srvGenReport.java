@@ -43,6 +43,12 @@ public class cls_srvGenReport implements srvGenReport {
                     if (Job.getJob_code() != null && !Job.getJob_code().isEmpty()) {
                         condition.append(" AND W.JOB_CODE LIKE '%").append(Job.getJob_code()).append("%'");
                     }
+                    if (Job.getWorktype_id() != null && !Job.getWorktype_id().isEmpty()) {
+                        condition.append(" AND W.WORKTYPE_ID = '")
+                                .append(Job.getWorktype_id().replace("'", "''"))
+                                .append("'");
+                    }
+
                     if (Job.getReportjob_fromdate() != null) {
                         java.sql.Date sqlFrom = new java.sql.Date(Job.getReportjob_fromdate().getTime());
                         condition.append(" AND W.WORK_DATE >= '").append(sqlFrom).append("'");

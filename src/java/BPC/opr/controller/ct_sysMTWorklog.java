@@ -33,6 +33,7 @@ public class ct_sysMTWorklog {
         Oj_sb.append(", U.PHONENUMBER");
         Oj_sb.append(", U.EMAIL");
         Oj_sb.append(", D.DEPARTMENT_NAME");
+        Oj_sb.append(", W.WORKTYPE_ID");
 
         Oj_sb.append(" FROM WORKLOG W");
         Oj_sb.append(" LEFT JOIN LOCATION L ON W.LOCATION_ID = L.LOCATION_ID");
@@ -67,7 +68,8 @@ public class ct_sysMTWorklog {
                         Oj_rs.getString("POSITION"),
                         Oj_rs.getString("PHONENUMBER"),
                         Oj_rs.getString("EMAIL"),
-                        Oj_rs.getString("DEPARTMENT_NAME")
+                        Oj_rs.getString("DEPARTMENT_NAME"),
+                        Oj_rs.getString("WORKTYPE_ID")
                 );
                 Ojarr_model.add(model);
             }

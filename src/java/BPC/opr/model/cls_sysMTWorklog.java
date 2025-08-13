@@ -25,8 +25,9 @@ public class cls_sysMTWorklog {
     String phonenumber;
     String email;
     String department_name;
+    String worktype_id;
 
-    public cls_sysMTWorklog(Date work_date, Time time_start, Time time_end, String job_code, String task_detail, String location_name, String user_id, String user_name, String position, String phonenumber, String email, String department_name) {
+    public cls_sysMTWorklog(Date work_date, Time time_start, Time time_end, String job_code, String task_detail, String location_name, String user_id, String user_name, String position, String phonenumber, String email, String department_name, String worktype_id) {
         this.work_date = work_date;
         this.time_start = time_start;
         this.time_end = time_end;
@@ -39,6 +40,7 @@ public class cls_sysMTWorklog {
         this.phonenumber = phonenumber;
         this.email = email;
         this.department_name = department_name;
+        this.worktype_id = worktype_id;
     }
 
     public Date getWork_date() {
@@ -135,6 +137,14 @@ public class cls_sysMTWorklog {
 
     public void setDepartment_name(String department_name) {
         this.department_name = department_name;
+    }
+    
+    public String getWorktype_id() {
+        return worktype_id;
+    }
+
+    public void setWorktype_id(String worktype_id) {
+        this.worktype_id = worktype_id;
     }
     
 }

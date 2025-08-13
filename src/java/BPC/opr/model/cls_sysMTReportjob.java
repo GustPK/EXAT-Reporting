@@ -22,6 +22,7 @@ public class cls_sysMTReportjob {
 
     String user_id;
     String job_code;
+    String worktype_id;
 
     public String getReportjob_id() {
         return reportjob_id;
@@ -109,5 +110,13 @@ public class cls_sysMTReportjob {
 
     public void setJob_code(String job_code) {
         this.job_code = job_code;
+    }
+    
+    public String getWorktype_id() {
+        return worktype_id;
+    }
+
+    public void setWorktype_id(String worktype_id) {
+        this.worktype_id = worktype_id;
     }
 }
