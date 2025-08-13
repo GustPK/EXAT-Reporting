@@ -1,11 +1,7 @@
 package BPC.opr.service;
 
-import BPC.opr.controller.ct_sysMTBank;
-import BPC.opr.controller.ct_sysMTBenefit;
 import BPC.opr.controller.ct_sysMTReportjob;
 import BPC.opr.controller.ct_sysMTWorklog;
-import BPC.opr.model.cls_sysMTBank;
-import BPC.opr.model.cls_sysMTBenefit;
 import BPC.opr.model.cls_sysMTReportjob;
 import BPC.opr.model.cls_sysMTWorklog;
 import BPC.opr.utility.cls_DBConnector;
@@ -36,37 +32,6 @@ public class cls_srvGenReport implements srvGenReport {
             Oj_conn.openSQLServer();
 
             switch (Job.getReportjob_type()) {
-
-                case "SYS001":
-                    ct_sysMTBank ct_bank = new ct_sysMTBank();
-                    List<cls_sysMTBank> arr_bank = ct_bank.getData(Oj_conn);
-
-                    for (cls_sysMTBank model : arr_bank) {
-                        Map m = new HashMap();
-                        m.put("bank_code", model.getBank_code());
-                        m.put("bank_name_th", model.getBank_name_th());
-                        m.put("bank_name_en", model.getBank_name_en());
-                        m.put("modified_by", model.getMoified_by());
-                        m.put("modified_date", sdf_date.format(model.getMoified_date()));
-                        Ojarr_output.add(m);
-                    }
-                    break;
-
-                case "SYS002":
-                    ct_sysMTBenefit ct_benefit = new ct_sysMTBenefit();
-                    List<cls_sysMTBenefit> arr_benefit = ct_benefit.getData(Oj_conn);
-
-                    for (cls_sysMTBenefit model : arr_benefit) {
-                        Map m = new HashMap();
-                        m.put("benefit_id", model.getBenefit_id());
-                        m.put("benefit_text", model.getBenefit_text());
-                        m.put("benefit_from", sdf_date.format(model.getBenefit_from()));
-                        m.put("benefit_to", sdf_date.format(model.getBenefit_to()));
-                        m.put("edit_by", model.getEdit_by());
-                        m.put("edit_date", sdf_date.format(model.getEdit_date()));
-                        Ojarr_output.add(m);
-                    }
-                    break;
 
                 case "SYS003":
                     ct_sysMTWorklog ct_worklog = new ct_sysMTWorklog();

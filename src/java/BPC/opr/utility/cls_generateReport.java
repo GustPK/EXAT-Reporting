@@ -90,30 +90,6 @@ public class cls_generateReport extends HttpServlet {
             //-- Parameter
             switch (md_reportjob.getReportjob_type()) {
 
-                case "SYS001":
-
-                    dataList = srv_report.getReportSYS(md_reportjob);
-
-                    parameters.put("P_COMPLOGO_PATH", request.getServletContext().getRealPath("/").replace("\\", "/") + "/jrxml/img/logo.jpg");
-
-                    parameters.put("P_REPORTCODE", "SYS-001");
-                    parameters.put("P_REPORTNAME", "ข้อมูลธนาคาร");
-
-                    outputFileName = "SYS-001";
-                    break;
-
-                case "SYS002":
-
-                    dataList = srv_report.getReportSYS(md_reportjob);
-
-                    parameters.put("P_COMPLOGO_PATH", request.getServletContext().getRealPath("/").replace("\\", "/") + "/jrxml/img/logo.jpg");
-
-                    parameters.put("P_REPORTCODE", "SYS-002");
-                    parameters.put("P_REPORTNAME", "ข้อมูลเบิกสวัสดิการ");
-
-                    outputFileName = "SYS-002";
-                    break;
-
                 case "SYS003":
 
                     dataList = srv_report.getReportSYS(md_reportjob);
