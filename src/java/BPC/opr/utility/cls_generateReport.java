@@ -95,7 +95,6 @@ public class cls_generateReport extends HttpServlet {
                     dataList = srv_report.getReportSYS(md_reportjob);
 
                     parameters.put("P_COMPLOGO_PATH", request.getServletContext().getRealPath("/").replace("\\", "/") + "/jrxml/img/logo.jpg");
-                    parameters.put("P_LANGUAGE", md_reportjob.getReportjob_language());
 
                     parameters.put("P_REPORTCODE", "SYS-001");
                     parameters.put("P_REPORTNAME", "ข้อมูลธนาคาร");
@@ -108,7 +107,6 @@ public class cls_generateReport extends HttpServlet {
                     dataList = srv_report.getReportSYS(md_reportjob);
 
                     parameters.put("P_COMPLOGO_PATH", request.getServletContext().getRealPath("/").replace("\\", "/") + "/jrxml/img/logo.jpg");
-                    parameters.put("P_LANGUAGE", md_reportjob.getReportjob_language());
 
                     parameters.put("P_REPORTCODE", "SYS-002");
                     parameters.put("P_REPORTNAME", "ข้อมูลเบิกสวัสดิการ");
@@ -121,7 +119,6 @@ public class cls_generateReport extends HttpServlet {
                     dataList = srv_report.getReportSYS(md_reportjob);
 
                     parameters.put("P_COMPLOGO_PATH", request.getServletContext().getRealPath("/").replace("\\", "/") + "/jrxml/img/logo.jpg");
-                    parameters.put("P_LANGUAGE", md_reportjob.getReportjob_language());
 
                     parameters.put("P_REPORTCODE", "SYS-003");
                     parameters.put("P_REPORTNAME", "รายการดำเนินงาน");

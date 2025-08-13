@@ -24,9 +24,6 @@ public class ct_sysMTReportjob {
         Oj_sb.append(", ISNULL(REPORTJOB_STATUS, '') AS REPORTJOB_STATUS"); 
         Oj_sb.append(", ISNULL(REPORTJOB_FROMDATE, '') AS REPORTJOB_FROMDATE"); 
         Oj_sb.append(", ISNULL(REPORTJOB_TODATE, '') AS REPORTJOB_TODATE"); 
-        Oj_sb.append(", ISNULL(REPORTJOB_PAYDATE, '') AS REPORTJOB_PAYDATE"); 
-        Oj_sb.append(", ISNULL(REPORTJOB_LANGUAGE, 'TH') AS REPORTJOB_LANGUAGE"); 
-        Oj_sb.append(", ISNULL(REPORTJOB_NOTE, '') AS REPORTJOB_NOTE"); 
         Oj_sb.append(", ISNULL(USER_ID, '') AS USER_ID");
         Oj_sb.append(", ISNULL(JOB_CODE, '') AS JOB_CODE");
         Oj_sb.append(", ISNULL(MODIFIED_BY, CREATED_BY) AS MODIFIED_BY"); 
@@ -60,9 +57,6 @@ public class ct_sysMTReportjob {
                 model.setReportjob_status(Oj_rs.getString("REPORTJOB_STATUS"));
                 model.setReportjob_fromdate(Oj_rs.getDate("REPORTJOB_FROMDATE"));
                 model.setReportjob_todate(Oj_rs.getDate("REPORTJOB_TODATE"));
-                model.setReportjob_paydate(Oj_rs.getDate("REPORTJOB_PAYDATE"));
-                model.setReportjob_language(Oj_rs.getString("REPORTJOB_LANGUAGE"));
-                model.setReportjob_note(Oj_rs.getString("REPORTJOB_NOTE"));
                 model.setUser_id(Oj_rs.getString("USER_ID"));
                 model.setJob_code(Oj_rs.getString("JOB_CODE"));
                 model.setCreated_by(Oj_rs.getString("MODIFIED_BY"));

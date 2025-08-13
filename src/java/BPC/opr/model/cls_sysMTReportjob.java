@@ -7,10 +7,7 @@ package BPC.opr.model;
 
 import java.util.Date;
 
-/**
- *
- * @author witco
- */
+
 public class cls_sysMTReportjob {
 
     String reportjob_id;
@@ -19,9 +16,6 @@ public class cls_sysMTReportjob {
     String reportjob_status;
     Date reportjob_fromdate;
     Date reportjob_todate;
-    Date reportjob_paydate;
-    String reportjob_language;
-    String reportjob_note;
     String created_by;
     Date created_date;
     String flag;
@@ -75,30 +69,6 @@ public class cls_sysMTReportjob {
 
     public void setReportjob_todate(Date reportjob_todate) {
         this.reportjob_todate = reportjob_todate;
-    }
-
-    public Date getReportjob_paydate() {
-        return reportjob_paydate;
-    }
-
-    public void setReportjob_paydate(Date reportjob_paydate) {
-        this.reportjob_paydate = reportjob_paydate;
-    }
-
-    public String getReportjob_language() {
-        return reportjob_language;
-    }
-
-    public void setReportjob_language(String reportjob_language) {
-        this.reportjob_language = reportjob_language;
-    }
-
-    public String getReportjob_note() {
-        return reportjob_note;
-    }
-
-    public void setReportjob_note(String reportjob_note) {
-        this.reportjob_note = reportjob_note;
     }
 
     public String getCreated_by() {
